@@ -160,3 +160,12 @@ body::before {
     background: rgba(0,0,0,0.5);
   }
 }
+@media screen and (max-width: 640px) {
+  .logo_h { height: 3.5rem; }
+  .text_h { height: 2.5rem; }
+  .img_w { width: 100%; }
+  .work_w { width: 95%; }
+  .hero-container { width: 100%; height: auto; flex-direction: column; }
+  .hero-card { margin-left: 0; width: 100%; }
+  .hero-img { clip-path: none; height: auto; }
+}
