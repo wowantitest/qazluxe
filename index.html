@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QAZ LUXE Detailing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#1B1A05] text-white">
+
+  <!-- Header -->
+  <header class="relative z-10 flex items-center justify-between px-6 py-4 bg-[#1B1A05] border-b border-[#C19024]">
+    <div class="flex items-center gap-4">
+      <img src="img/car.svg" alt="car" class="logo_h">
+      <img src="img/text.svg" alt="QAZ LUXE Detailing" class="text_h">
+    </div>
+    <nav class="flex gap-8 text-[#C19024] font-black text-xl">
+      <a href="#about" class="hover:underline">О НАС</a>
+      <a href="#services" class="hover:underline">УСЛУГИ</a>
+      <a href="#works" class="hover:underline">РАБОТЫ</a>
+      <a href="#contacts" class="hover:underline">КОНТАКТЫ</a>
+    </nav>
+    <a href="https://wa.me/77068306844" class="ml-6">
+      <img src="img/wa.png" alt="WhatsApp" style="width: 5rem;">
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="overflow-visible">
+    <div class="hero-container">
+      <div class="hero-card">
+        <img src="img/services/1.png" alt="Фото 1" class="hero-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-caption"><h1>Полировка</h1><h3>Блестящий результат</h3></div>
+      </div>
+      <div class="hero-card">
+        <img src="img/services/2.png" alt="Фото 2" class="hero-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-caption"><h1>Оклейка</h1><h3>Новый образ</h3></div>
+      </div>
+      <div class="hero-card">
+        <img src="img/services/3.png" alt="Фото 3" class="hero-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-caption"><h1>Детейлинг</h1><h3>Идеальная чистота</h3></div>
+      </div>
+      <div class="hero-card">
+        <img src="img/services/4.png" alt="Фото 4" class="hero-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-caption"><h1>Тонировка</h1><h3>Защита и стиль</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <h2 class="text-4xl font-black text-[#C19024] text-center mb-8">О нас</h2>
+    <div class="max-w-screen-xl mx-auto px-6 lg:px-0 flex flex-col lg:flex-row items-center gap-8" style="width: 66rem;">
+        <!-- Центрированный заголовок -->
+    
+
+      <!-- Левая колонка: изображение -->
+      <div class="w-full lg:w-1/2">
+        <img src="img/about_us.jpg" alt="О нас - QAZ LUXE Detailing" class="img_w h-auto rounded-lg shadow-lg" style="border-radius: 7rem;">
+      </div>
+      <!-- Правая колонка: текст -->
+      <div class="w-full lg:w-1/2 text-left">
+        <p class="text-lg text-gray-200 mb-4">
+          Добро пожаловать в QAZ LUXE Detailing! Наш центр предоставляет полный спектр услуг по уходу за автомобилем:
+          от полировки и детейлинга до защиты плёнкой и тонировки. Мы глубоко уважаем каждую деталь — от кузова до интерьера.
+        </p>
+        <p class="text-lg text-gray-200 mb-6">
+          Наша команда состоит из профессиональных мастеров с многолетним опытом. Мы используем только проверенные
+          высококачественные материалы и современные технологии, чтобы ваш автомобиль выглядел безупречно
+          и сохранял свою красоту на долгое время.
+        </p>
+        <a href="#services" class="inline-block bg-[#C19024] hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition">
+          Узнать больше
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Works Section -->
+<section id="works" class="work_w py-16 bg-[#1B1A05]">
+  <div class="max-w-screen-xl mx-auto px-6 lg:px-0">
+    <!-- Заголовок -->
+    <h2 class="text-4xl font-black text-[#C19024] text-center mb-12">Наши работы</h2>
+
+    <!-- Сетка с каруселью работ -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Работа 1: Полировка -->
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="img/jobs/1.png" alt="До/После полировки" class="w-full h-auto object-cover">
+        <!-- Полупрозрачная тёмная накладка при hover -->
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity"></div>
+        <!-- Подпись (появляется при hover) -->
+        <div class="absolute bottom-0 left-0 w-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="inline-block bg-[#C19024] text-black font-bold py-1 px-3 rounded">Полировка</span>
+        </div>
+      </div>
+
+      <!-- Работа 2: Тонировка задних стёкол -->
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="img/jobs/2.png" alt="До/После тонировки задних стёкол" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity"></div>
+        <div class="absolute bottom-0 left-0 w-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="inline-block bg-[#C19024] text-black font-bold py-1 px-3 rounded">Детейлинг салона</span>
+        </div>
+      </div>
+
+      <!-- Работа 3: Полировка фар -->
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="img/jobs/3.png" alt="До/После полировки фар" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity"></div>
+        <div class="absolute bottom-0 left-0 w-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="inline-block bg-[#C19024] text-black font-bold py-1 px-3 rounded">Полировка фар</span>
+        </div>
+      </div>
+
+      <!-- Работа 4: Детейлинг салона -->
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="img/jobs/4.png" alt="До/После детейлинга салона" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity"></div>
+        <div class="absolute bottom-0 left-0 w-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="inline-block bg-[#C19024] text-black font-bold py-1 px-3 rounded">Тонировка</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contacts Section -->
+<section id="contacts" class="work_w py-16 bg-[#1B1A05]">
+  <div class="max-w-screen-xl mx-auto px-6 lg:px-0">
+    <h2 class="text-4xl font-black text-[#C19024] text-center mb-12">Контакты</h2>
+
+    <!-- Добавили justify-center, чтобы центрировать flex-контейнер -->
+    <div class="flex flex-col lg:flex-row gap-8 justify-center">
+      
+      <!-- Левый столбец: Google Maps -->
+      <div class="w-full lg:w-1/2 h-[400px] lg:h-[500px] max-w-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d596.3195109188745!2d69.38966741720542!3d53.28455420000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424c9563db86cb4f%3A0xeab4de2f79da9712!2z0JrRg9C70YzRgtGD0YDQvdC-0LUg0L_RgNC-0YHRgtGA0LDQvdGB0YLQstC-ICLQl9Cw0LHQtdC5Ig!5e0!3m2!1sru!2skz!4v1749057955969!5m2!1sru!2skz"
+          width="100%"
+          height="100%"
+          class="border-0 rounded-lg"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Правый столбец: Форма обратной связи -->
+<div class="w-full lg:w-1/2 max-w-lg">
+  <!--   
+    Замените “ВАШ_FORMSPREE_ENDPOINT” на свой адрес из Formspree, 
+    например “https://formspree.io/f/xyzabcd”
+  -->
+  <form id="contactForm" action="https://formspree.io/f/mnnvndzb" method="POST" class="space-y-6">
+    
+    <!-- Имя -->
+    <div>
+      <label for="name" class="block text-gray-200 mb-2">Ваше имя</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Введите имя"
+        required
+        class="w-full bg-[#2A2A10] border border-[#444023] text-white placeholder-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C19024] transition"
+      />
+    </div>
+
+    <!-- Телефон -->
+    <div>
+      <label for="phone" class="block text-gray-200 mb-2">Телефон</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+7 (___) ___-__-__"
+        required
+        class="w-full bg-[#2A2A10] border border-[#444023] text-white placeholder-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C19024] transition"
+      />
+    </div>
+
+    <!-- Сообщение -->
+    <div>
+      <label for="message" class="block text-gray-200 mb-2">Сообщение</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Опишите задачу или задайте вопрос"
+        required
+        class="w-full bg-[#2A2A10] border border-[#444023] text-white placeholder-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C19024] transition"
+      ></textarea>
+    </div>
+
+    <!-- Кнопка отправки -->
+    <div>
+      <button
+        type="submit"
+        class="w-full bg-[#C19024] hover:bg-[#b3831a] text-black font-bold py-3 rounded-lg transition">
+        Отправить
+      </button>
+    </div>
+
+    <!-- Блок для сообщений об успехе/ошибке -->
+    <div id="formFeedback" class="mt-4 text-center text-sm"></div>
+  </form>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="work_w bg-[#1B1A05] pt-8">
+  <!-- Основной блок подвала -->
+  <div class="max-w-screen-xl mx-auto px-6 lg:px-0 flex flex-col lg:flex-row justify-between items-center text-gray-200">
+    <!-- Левый столбец: название и адрес -->
+    <div class="text-center lg:text-left mb-6 lg:mb-0">
+      <h3 class="text-2xl font-black text-[#C19024] mb-2">QAZ LUXE Detailing</h3>
+      <p class="text-base">Адрес: Абая көшесі 118, Көкшетау 020008</p>
+      <p class="text-base">Республика Казахстан</p>
+    </div>
+    <!-- Правый столбец: телефоны -->
+    <div class="text-center lg:text-right">
+      <p class="text-lg font-bold text-[#C19024] mb-2">Телефоны:</p>
+      <p><strong>Сергей</strong> <a href="tel:+77068306844" class="hover:underline">+7 706 830-68-44</a></p>
+      <p><strong>Константин</strong> <a href="tel:+77088656170" class="hover:underline">+7 708 865-61-70</a></p>
+    </div>
+  </div>
+
+  <!-- Линия-разделитель -->
+  <div class="max-w-screen-xl mx-auto px-6 lg:px-0 mt-8 border-t border-[#444023]"></div>
+
+  <!-- Копирайт -->
+  <div class="max-w-screen-xl mx-auto px-6 lg:px-0 mt-4 pb-4 text-center text-gray-500 text-sm">
+    © 2025 QAZ LUXE Detailing. Все права защищены. DESIGN BY <a href="https://www.instagram.com/this.is.zbs" class="hover:underline">S.Kopyt-OFF</a>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const feedback = document.getElementById('formFeedback');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // отменяем обычную отправку
+
+      // Собираем данные формы в объект FormData
+      const formData = new FormData(form);
+
+      // Меняем состояние кнопки, чтобы предотвратить повторные клики
+      const submitButton = form.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+      submitButton.classList.add('opacity-50', 'cursor-not-allowed');
+
+      // Отправляем запрос на Formspree
+      fetch(form.action, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          // Если всё прошло успешно
+          feedback.textContent = 'Спасибо! Ваше сообщение отправлено.';
+          feedback.className = 'mt-4 text-center text-green-400 text-sm';
+
+          // Очищаем форму
+          form.reset();
+        } else {
+          // Если произошла ошибка (например, неверный endpoint)
+          response.json().then(data => {
+            let errorMsg = 'Произошла ошибка. Пожалуйста, попробуйте позже.';
+            if (data.errors) {
+              errorMsg = data.errors.map(err => err.message).join(', ');
+            }
+            feedback.textContent = errorMsg;
+            feedback.className = 'mt-4 text-center text-red-400 text-sm';
+          });
+        }
+      })
+      .catch(error => {
+        // Сетевая ошибка
+        feedback.textContent = 'Сетевая ошибка. Пожалуйста, проверьте соединение.';
+        feedback.className = 'mt-4 text-center text-red-400 text-sm';
+      })
+      .finally(() => {
+        // Разблокируем кнопку в любом случае
+        submitButton.disabled = false;
+        submitButton.classList.remove('opacity-50', 'cursor-not-allowed');
+      });
+    });
+  });
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
