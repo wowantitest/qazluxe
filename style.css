@@ -160,6 +160,11 @@ body::before {
     background: rgba(0,0,0,0.5);
   }
 }
+@media screen and (max-width: 768px) {
+  .logo_h { height: 4rem; }
+  .text_h { height: 3rem; }
+}
+
 @media screen and (max-width: 640px) {
   .logo_h { height: 3.5rem; }
   .text_h { height: 2.5rem; }
